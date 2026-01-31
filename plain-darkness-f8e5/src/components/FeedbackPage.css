@@ -15,37 +15,112 @@
   width: 100%;
 }
 
-.view-bucket-button {
+.analysis-actions {
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.view-analysis-button {
   padding: 0.6em 1.2em;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.view-bucket-button:disabled {
+.view-analysis-button:disabled,
+.refresh-button:disabled,
+.check-bucket-button:disabled,
+.test-single-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
 
-.bucket-error {
+.refresh-button,
+.check-bucket-button,
+.test-single-button {
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.analysis-status {
+  color: #646cff;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.analysis-error {
   color: #e74c3c;
   margin-top: 1rem;
 }
 
-.bucket-empty {
+.analysis-empty {
   margin-top: 1rem;
+  color: #888;
+  max-width: 500px;
+}
+
+.bucket-diagnostics {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.bucket-diagnostics ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.diagnostics-title {
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.diagnostics-warning {
+  margin: 0.75rem 0 0;
+  color: #f6821f;
+}
+
+.diagnostics-keys {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.analysis-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.analysis-card {
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.analysis-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
   color: #888;
 }
 
-.image-list {
-  margin-top: 2rem;
-  padding-left: 2rem;
-  text-align: left;
-  max-width: 600px;
-}
-
-.image-list li {
-  margin-bottom: 0.5rem;
+.analysis-card-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .back-button {
