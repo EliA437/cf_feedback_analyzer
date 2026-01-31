@@ -15,34 +15,16 @@
   width: 100%;
 }
 
-.analysis-actions {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .view-analysis-button {
+  margin-top: 2rem;
   padding: 0.6em 1.2em;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.view-analysis-button:disabled,
-.refresh-button:disabled,
-.check-bucket-button:disabled,
-.test-single-button:disabled {
+.view-analysis-button:disabled {
   opacity: 0.7;
   cursor: not-allowed;
-}
-
-.refresh-button,
-.check-bucket-button,
-.test-single-button {
-  padding: 0.6em 1.2em;
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 .analysis-status {
